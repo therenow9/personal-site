@@ -4,7 +4,7 @@
 }
 .navbar-main {
   background-color: rgb(51, 2, 131);
-  height: 80px;
+  height: 70px;
   padding-top: 0%;
   padding-bottom: 0%;
 }
@@ -23,11 +23,12 @@
 }
 
 .button-text:hover {
-  color: rgb(210, 210, 231);
+  color: rgb(255, 255, 255);
 }
 .button {
   padding-top: 15px;
   background-color: rgb(51, 2, 131);
+  color: rgb(255, 255, 255);
   font-size: large;
 }
 .button:hover {
@@ -48,13 +49,33 @@
   font-size: 2.4rem;
   font-family: Verdana, sans-serif;
 }
+.sub-section-title {
+  font-size: 1.5rem;
+  font-family: Verdana, sans-serif;
+}
 .body-text {
   font-size: 1.4rem;
+  font-family: Hand;
+}
+.caption-text {
+  font-size: 1.2rem;
   font-family: Hand;
 }
 .skill-list {
   font-size: 1.6rem;
   font-family: Hand;
+}
+.picture-GM {
+  width: 20%;
+  height: auto;
+}
+.picture-demo {
+  width: 35%;
+  height: auto;
+}
+.picture-desktop {
+  width: 60%;
+  height: auto;
 }
 @media screen and (min-device-width: 320px) and (max-device-width: 800px) {
   .main-title {
@@ -78,18 +99,36 @@
     font-size: 1rem;
     height: 15px;
   }
+  .caption-text {
+    font-size: 1.2rem;
+  }
   .custom-button {
     height: 50px;
     text-align: center;
     width: 100%;
     padding-bottom: 15px;
   }
-  .picture {
+  .picture-RJ {
     height: 60%;
     width: 60%;
   }
+  .picture-GM {
+    width: 60%;
+    height: auto;
+  }
+  .picture-demo {
+    width: 70%;
+    height: auto;
+  }
+  .picture-desktop {
+    width: 100%;
+    height: auto;
+  }
   .section-title {
     font-size: 2rem;
+  }
+  .sub-section-title {
+    font-size: 1.2rem;
   }
   .body-text {
     font-size: 1.2rem;

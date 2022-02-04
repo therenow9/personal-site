@@ -34,7 +34,8 @@
         <div class="container-fluid">
             <!-- container class used to create a margin -->
             <div class="navbar-brand main-title">Jeremy Scheuerman's Digital Portfolio</div>
-            <button class=" navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+            <button class=" navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu"
+                aria-controls="nav-menu" aria-expanded="nav-menu" aria-label="Toggle navigation">
                 <!-- targets the nav menu so making it that that is what collapses in the hamburger menu -->
                 <span class="navbar-toggler-icon">
                     <!-- adds hamburger symbol -->
@@ -63,12 +64,6 @@
             </div>
         </div>
     </nav>
-    <script>const navLinks = document.querySelectorAll('.nav-item')
-        const menuToggle = document.getElementById('navbarSupportedContent')
-        const bsCollapse = new bootstrap.Collapse(menuToggle)
-        navLinks.forEach((l) => {
-            l.addEventListener('click', () => { bsCollapse.toggle() })
-        })</script>
     <div class="container">
         <!--
         <div class="warning-title text-center bold">!!Caution this website is currently undergoing creation/
@@ -77,7 +72,7 @@
         </div>  -->
         <div class="section-title text-center bold">About Me
         </div>
-        <img src="images\Rj_and_I.jpg" class="picture img-fluid max-width:100% height:auto rounded mx-auto d-block"
+        <img src="images\Rj_and_I.jpg" class="picture-RJ img-fluid max-width:100% height:auto rounded mx-auto d-block"
             alt="">
         <div class="py-4 text-center body-text">
             <p>Hello and welcome to my personal site and online Portfolio! A little bit about me, I am a college
@@ -161,21 +156,89 @@
         <div class="section-title text-center bold">Experience
         </div>
         <div class="py-2 text-center body-text">
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad saepe provident deleniti repellat maxime
-                repellendus quia molestiae odit. Facere, soluta nostrum? Veniam et unde beatae laudantium temporibus,
-                ratione earum, quisquam assumenda fuga alias illum a reiciendis id voluptatem, sed ab. Soluta ea
-                perferendis molestias hic quidem quis laudantium totam, officiis voluptatum, excepturi eveniet minima
-                expedita atque deserunt ab illo suscipit rerum nisi cumque, impedit perspiciatis necessitatibus nihil.
-                Animi eos laudantium mollitia officia ad ut eligendi assumenda, quam praesentium cum quisquam nam quae
-                dolores reiciendis in non architecto accusantium. Impedit enim perferendis aut numquam fugiat optio
-                repellat modi cumque tenetur molestiae quasi debitis eaque nemo nulla ullam minima consectetur
-                necessitatibus, iste exercitationem maiores maxime aperiam. Magni corporis modi aliquam quibusdam,
-                voluptatibus placeat libero cum nostrum dicta quasi maxime veritatis id earum magnam consectetur quia
-                unde facilis voluptas facere ratione enim ducimus ut. Ex quas eum, blanditiis unde eos quam repellendus
-                a.
+            <p>I’ve come along way and accomplished a lot of things over the past few years to learn what I know now.
+                This is how I did
+                it through a combination of personal projects, YouTube /web tutorials, school classes, work, internships
+                and quite a bit
+                of elbow grease! Here is my story from when I started to where I am now!
             </p>
         </div>
+        <div class="sub-section-title text-center bold">Game Dev/Intro to Tech
+        </div>
+        <div class="py-1 text-center body-text">
+            <img src="images\GMS2_Primary_DblLine_BlackTransparent.png"
+                class="picture-GM img-fluid rounded mx-auto d-block" alt="">
+            <p>After being inspired by Toby Fox, a solo developer who made the now hit game Undertale almost entirely by
+                himself, using
+                a program called Gamemaker studio 2, which comes with its own UI, built in scripting language with OO
+                functions, pixel
+                art editor and so much more.. I spent that entire summer working nonstop on my MacBook and learning the
+                fundamentals of
+                programming as well as game development and sprite making by working with YoYo studios Game Maker Studio
+                2. I continued working on game devlopment in my free time throughout the next school year and even
+                learned a bit of FL Studio to produce my own music for the games! These projects are available on my
+                github if you are interested in seeing some of the projects i made! These first
+                few game-dev projects I made will always hold a special place in my heart for introducing me into the
+                tech word and I
+                will always cherish game development for putting me on this exciting career path.
+            </p>
+            <img src="images\tech-demo.png" class="picture-demo img-fluid rounded mx-auto d-block" alt="">
+            <div class="caption-text">
+                <p>A tech demo i made in Game Maker Studio 2</p>
+            </div>
+        </div>
+        <div class="sub-section-title text-center bold">Building a Desktop
+        </div>
+        <div class="py-1 text-center body-text">
+            <p>As my projects grew my MacBook air wasn’t cutting it for me, with high compile times, due to its lack of
+                a GPU, and
+                relatively small 8 gigs of memory, and a laptop i5 processor, building my projects was taking much
+                longer than I
+                would like. I
+                decided it was time to build a desktop from scratch to better handle my programming needs. I built a
+                pretty decent
+                desktop from scratch, with a GTX 1650 GPU, 32 gigabytes of RAM and a 9th gen i5 processor. This was a
+                neat experience
+                because this was the first time, I had ever built a pc or really worked with computer hardware hands on.
+                Since then, I
+                haven’t been scared to open computers, swap parts, repair computers, laptops, game consoles etc. I’ve
+                fixed computers,
+                upgraded computers and heck even broken a couple machines by accident in the process, it’s all part of
+                the learning
+                experience!
+            </p>
+            <img src="images\desktop.jpg" class="picture-desktop img-fluid rounded mx-auto d-block" alt="">
+            <div class="caption-text">
+                <p>My current desktop setup</p>
+            </div>
+        </div>
+        <div class="sub-section-title text-center bold">Building a Desktop
+        </div>
+        <div class="py-1 text-center body-text">
+            <p>As my projects grew my MacBook air wasn’t cutting it for me, with high compile times, due to its lack of
+                a GPU, and
+                relatively small 8 gigs of memory, and a laptop i5 processor, building my projects was taking much
+                longer than I
+                would like. I
+                decided it was time to build a desktop from scratch to better handle my programming needs. I built a
+                pretty decent
+                desktop from scratch, with a GTX 1650 GPU, 32 gigabytes of RAM and a 9th gen i5 processor. This was a
+                neat experience
+                because this was the first time, I had ever built a pc or really worked with computer hardware hands on.
+                Since then, I
+                haven’t been scared to open computers, swap parts, repair computers, laptops, game consoles etc. I’ve
+                fixed computers,
+                upgraded computers and heck even broken a couple machines by accident in the process, it’s all part of
+                the learning
+                experience!
+            </p>
+            <img src="images\desktop.jpg" class="picture-desktop img-fluid rounded mx-auto d-block" alt="">
+            <div class="caption-text">
+                <p>My current desktop setup</p>
+            </div>
+        </div>
     </div>
+
     <div class="container">
         <!--
                     <div class="warning-title text-center bold">!!Caution this website is currently undergoing creation/
@@ -224,6 +287,13 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ"
         crossorigin="anonymous"></script>
+    <script>const navLinks = document.querySelectorAll('nav-item')
+        const menuToggle = document.getElementById('nav-menu')
+        const bsCollapse = new bootstrap.Collapse(menuToggle)
+        navLinks.forEach((l) => {
+            l.addEventListener('click', () => { bsCollapse.toggle() })
+        })
+    </script>
 </body>
 
 </html>
