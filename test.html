@@ -1,11 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<!-- My personal website -->
-
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous" />
     <!--use this above link to include bootstrap in your project -->
@@ -29,94 +25,50 @@
     <!-- A grey horizontal navbar that becomes vertical on small screens -->
     <div id="about"></div>
     <!-- take back to top of the page -->
-    <nav class="sticky-top navbar navbar-main navbar-expand navbar ">
+    <nav class="navbar-main navbar navbar-expand-lg navbar-dark  sticky-top">
         <!-- py-3 adds some padding on the y-axis -->
         <div class="container">
             <!-- container class used to create a margin -->
-            <a href="#" class="navbar-brand main_title">Jeremy Scheuerman's Portfolio</a>
+            <div class="navbar-brand main-title">Jeremy Scheuerman's Digital Portfolio</div>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
                 <!-- targets the nav menu so making it that that is what collapses in the hamburger menu -->
                 <span class="navbar-toggler-icon">
                     <!-- adds hamburger symbol -->
                 </span>
             </button>
+            <!-- makes it so that it will collapse on smaller screens like a phone or half window -->
             <div class="collapse navbar-collapse" id="navmenu">
-                <!-- makes it so that it will collapse on smaller screens like a phone or half window -->
-                <ul class="navbar-nav nav-fill w-100 ms-auto">
+                <ul class="navbar-nav nav-fill ms-auto">
                     <!-- ms-auto makes it scale -->
-                    <li class="nav-item button">
+                    <li class="nav-item button py-2">
                         <a class="nav-link button-text text-center" href="#about">About me</a>
                     </li>
-                    <li class="nav-item button">
-                        <a class="nav-link button-text" href="#skills">Skills</a>
+                    <li class="nav-item button py-2">
+                        <a class="nav-link button-text text-center" href="#skills">Skills</a>
                     </li>
-                    <li class="nav-item button">
-                        <a class="nav-link button-text" href="#experience">Experience</a>
+                    <li class="nav-item button py-2">
+                        <a class="nav-link button-text text-center" href="#experience">Experience</a>
                     </li>
-                    <li class="nav-item button">
-                        <a class="nav-link button-text" href="#links">Links</a>
+                    <li class="nav-item button py-2">
+                        <a class="nav-link button-text text-center" href="#links">Links</a>
                     </li>
-                    <li class="nav-item button">
-                        <a class="nav-link button-text" href="#contact">Contact Me</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <nav class="navbar navbar-expand navbar-main sticky-top">
-        <!-- Links -->
-        <ul class="navbar-nav nav-fill w-100 ms-auto">
-            <div class="main_title nav-fill w-50 text-white text-center">
-                Jeremy Scheuerman's Portfolio
-            </div>
-            <li class="nav-item button">
-                <a class="nav-link button-text text-center" href="#about">About me</a>
-            </li>
-            <li class="nav-item button">
-                <a class="nav-link button-text" href="#skills">Skills</a>
-            </li>
-            <li class="nav-item button">
-                <a class="nav-link button-text" href="#experience">Experience</a>
-            </li>
-            <li class="nav-item button">
-                <a class="nav-link button-text" href="#links">Links</a>
-            </li>
-            <li class="nav-item button">
-                <a class="nav-link button-text" href="#contact">Contact Me</a>
-            </li>
-        </ul>
-    </nav>
-
-    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3">
-        <!-- py-3 adds some padding on the y-axis -->
-        <div class="container">
-            <!-- container class used to create a margin -->
-            <a href="#" class="navbar-brand">Frontend Bootcamp</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
-                <!-- targets the nav menu so making it that that is what collapses in the hamburger menu -->
-                <span class="navbar-toggler-icon">
-                    <!-- adds hamburger symbol -->
-                </span>
-            </button>
-            <div class="collapse navbar-collapse" id="navmenu">
-                <!-- makes it so that it will collapse on smaller screens like a phone or half window -->
-                <ul class="navbar-nav ms-auto">
-                    <!-- ms-auto makes it scale -->
-                    <li class="nav-item">
-                        <!-- li.nav-item is emmet shortcut -->
-                        <a href="#learn" class="nav-link">What Youll learn</a>
-                    </li>
-                    <li class="nav-item">
-                        <!-- li.nav-item is emmet shortcut -->
-                        <a href="#questions" class="nav-link">Questions</a>
-                    </li>
-                    <li class="nav-item">
-                        <!-- li.nav-item is emmet shortcut -->
-                        <a href="#instructors" class="nav-link">Instructors</a>
+                    <li class="nav-item button py-2">
+                        <a class="nav-link button-text text-center" href="#contact">Contact Me</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
+    <div class="query">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque id nostrum minima ut laboriosam error minus
+            voluptas blanditiis deserunt. Non ea quod incidunt ut, velit dolorum praesentium, illo amet repudiandae
+            exercitationem dolores a porro officia. Id accusamus itaque, dolorum aspernatur porro corporis sunt facere
+            quos, veritatis sed esse laboriosam, laudantium quia eaque delectus. Veniam, ratione culpa itaque esse
+            beatae vero quasi magni repellendus excepturi atque laborum alias debitis eveniet numquam doloremque eius
+            aliquam autem, voluptate sed quaerat repudiandae totam explicabo quia! A quidem voluptate rerum, et, modi
+            blanditiis quos eum excepturi recusandae molestias quis? Explicabo numquam saepe ipsa sequi illum!</p>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ"
+        crossorigin="anonymous"></script>
 </body>

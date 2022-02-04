@@ -3,29 +3,39 @@
   margin-right: auto;
 }
 .navbar-main {
-  padding-bottom: 0;
-  padding-top: 0;
   background-color: rgb(51, 2, 131);
+  height: 80px;
+  padding-top: 0%;
+  padding-bottom: 0%;
 }
-.main_title {
+.main-title {
   background-color: rgb(51, 2, 131);
   color: white;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.7em;
+  font-size: 1.3em;
   font-weight: 600;
   box-shadow: none;
 }
 .button-text {
   color: white;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.1em;
+  font-size: 1rem;
+}
+
+.button-text:hover {
+  color: rgb(210, 210, 231);
 }
 .button {
+  padding-top: 15px;
   background-color: rgb(51, 2, 131);
   font-size: large;
 }
 .button:hover {
   background-color: rgb(70, 12, 179);
+}
+.custom-button {
+  height: 70px;
+  text-align: center;
 }
 .warning-title {
   font-size: 2rem;
@@ -42,8 +52,49 @@
   font-size: 1.4rem;
   font-family: Hand;
 }
-
 .skill-list {
   font-size: 1.6rem;
   font-family: Hand;
+}
+@media screen and (min-device-width: 320px) and (max-device-width: 800px) {
+  .main-title {
+    font-size: 0.8rem;
+    transform: scale(1, 1.5);
+  }
+  .navbar-main {
+    background-color: rgb(51, 2, 131);
+    height: 70px;
+  }
+  .navbar-toggler-icon {
+    font-size: 0.4rem;
+    transform: scale(2, 1);
+  }
+  .navbar-toggler {
+    font-size: 0.4rem;
+    transform: scale(1.2, 2);
+  }
+  .button-text {
+    padding-top: 0px;
+    font-size: 1rem;
+    height: 15px;
+  }
+  .custom-button {
+    height: 50px;
+    text-align: center;
+    width: 100%;
+    padding-bottom: 15px;
+  }
+  .picture {
+    height: 60%;
+    width: 60%;
+  }
+  .section-title {
+    font-size: 2rem;
+  }
+  .body-text {
+    font-size: 1.2rem;
+  }
+  .skill-list {
+    font-size: 1.3rem;
+  }
 }

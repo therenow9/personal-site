@@ -29,28 +29,46 @@
     <!-- A grey horizontal navbar that becomes vertical on small screens -->
     <div id="about"></div>
     <!-- take back to top of the page -->
-    <nav class="navbar navbar-expand navbar-main sticky-top header_bar">
-        <ul class="navbar-nav nav-fill w-100 ms-auto">
-            <div class="main_title nav-fill w-50 text-white text-center">
-                Jeremy Scheuerman's Digital Portfolio
+    <nav class="autohide navbar-main navbar navbar-expand-lg navbar-dark sticky-top">
+        <!-- py-3 adds some padding on the y-axis -->
+        <div class="container-fluid">
+            <!-- container class used to create a margin -->
+            <div class="navbar-brand main-title">Jeremy Scheuerman's Digital Portfolio</div>
+            <button class=" navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <!-- targets the nav menu so making it that that is what collapses in the hamburger menu -->
+                <span class="navbar-toggler-icon">
+                    <!-- adds hamburger symbol -->
+                </span>
+            </button>
+            <!-- makes it so that it will collapse on smaller screens like a phone or half window -->
+            <div class="collapse navbar-collapse py-3" id="navmenu">
+                <ul class="navbar-nav nav-fill ms-auto">
+                    <!-- ms-auto makes it scale -->
+                    <li class="nav-item button custom-button">
+                        <a class="nav-link button-text text-center" href="#about">About me</a>
+                    </li>
+                    <li class="nav-item button custom-button">
+                        <a class="nav-link button-text text-center" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item button custom-button">
+                        <a class="nav-link button-text text-center" href="#experience">Experience</a>
+                    </li>
+                    <li class="nav-item button custom-button">
+                        <a class="nav-link button-text text-center" href="#links">Links</a>
+                    </li>
+                    <li class="nav-item button custom-button">
+                        <a class="nav-link button-text text-center" href="#contact">Contact Me</a>
+                    </li>
+                </ul>
             </div>
-            <li class="nav-item button">
-                <a class="nav-link button-text text-center" href="#about">About me</a>
-            </li>
-            <li class="nav-item button">
-                <a class="nav-link button-text" href="#skills">Skills</a>
-            </li>
-            <li class="nav-item button">
-                <a class="nav-link button-text" href="#experience">Experience</a>
-            </li>
-            <li class="nav-item button">
-                <a class="nav-link button-text" href="#links">Links</a>
-            </li>
-            <li class="nav-item button">
-                <a class="nav-link button-text" href="#contact">Contact Me</a>
-            </li>
-        </ul>
+        </div>
     </nav>
+    <script>const navLinks = document.querySelectorAll('.nav-item')
+        const menuToggle = document.getElementById('navbarSupportedContent')
+        const bsCollapse = new bootstrap.Collapse(menuToggle)
+        navLinks.forEach((l) => {
+            l.addEventListener('click', () => { bsCollapse.toggle() })
+        })</script>
     <div class="container">
         <!--
         <div class="warning-title text-center bold">!!Caution this website is currently undergoing creation/
@@ -59,7 +77,8 @@
         </div>  -->
         <div class="section-title text-center bold">About Me
         </div>
-        <img src="images\Rj_and_I.jpg" class="img-fluid max-width:100% height:auto rounded mx-auto d-block" alt="">
+        <img src="images\Rj_and_I.jpg" class="picture img-fluid max-width:100% height:auto rounded mx-auto d-block"
+            alt="">
         <div class="py-4 text-center body-text">
             <p>Hello and welcome to my personal site and online Portfolio! A little bit about me, I am a college
                 senior
@@ -197,43 +216,14 @@
                 voluptatibus consectetur ea maxime dignissimos itaque aspernatur asperiores est exercitationem!
                 Voluptates eligendi consequuntur ullam maxime recusandae. Debitis vitae optio perspiciatis beatae
                 corrupti ex, molestias, rem dolor asperiores corporis, esse eaque quis vel tempora! Dolorem est vel et
-                nesciunt, tempora a blanditiis. Similique, voluptatibus deleniti! Sint, consequatur est sequi veritatis
-                natus esse adipisci exercitationem officiis perspiciatis laborum beatae doloribus quibusdam corporis.
-                Aperiam nihil ad minus ut ullam quisquam maxime voluptate, similique consequuntur architecto dolorem id
-                perferendis dicta, assumenda iure quae est obcaecati! Illo, officia tempora! Cum fugit, atque illo
-                laborum numquam consequatur, earum aut molestiae iure ducimus placeat ratione ipsa porro! Esse ea
-                dignissimos sapiente eligendi nihil, asperiores enim natus. Accusantium veniam ipsa sed ipsum aliquam
-                autem aliquid aspernatur odio modi a molestiae assumenda harum similique corporis dolore repudiandae
-                tempora laborum quam nulla provident doloribus sapiente, numquam tenetur perspiciatis? Accusamus sunt
-                earum quaerat maxime quam cumque veniam officiis alias optio ab iusto nulla nam, in qui rerum odio?
-                Sequi quidem commodi fuga soluta, vero odit itaque maiores. Et similique minima enim porro ad laboriosam
-                aperiam esse, illum minus ullam quo quaerat molestiae! Architecto reiciendis eveniet possimus itaque eum
-                repudiandae laudantium, tempora quod numquam cumque, impedit error magni. Quos veritatis, ipsa qui animi
-                perspiciatis nam voluptatum adipisci itaque quas. Laboriosam porro voluptates quia veniam ipsum alias
-                minus odit iure. Impedit dolorem tenetur id repellat minus voluptatum sunt quo consequatur autem officia
-                provident repudiandae nihil itaque, eos, distinctio vel atque adipisci ratione nobis voluptatem eius
-                illum? Sapiente rem minima repellendus saepe veniam tenetur porro nihil quam totam, amet reprehenderit a
-                quis quia id autem, suscipit expedita dolorum! Cupiditate rerum voluptas quia? Facilis libero, accusamus
-                qui, dicta doloremque hic illum eius quisquam ducimus atque quaerat distinctio? Possimus dolorum, iure
-                tempore aperiam quas voluptas a! Commodi animi earum obcaecati id. Perferendis ducimus debitis natus
-                hic, voluptas itaque quisquam esse magni dolorum animi in dicta! Veniam corrupti vero fugit ullam at
-                error quod culpa molestiae fugiat sit asperiores delectus maiores maxime, amet adipisci tempore odit
-                modi nulla nemo excepturi. Sint magnam deserunt nisi dolore ipsa? Quis, temporibus. Odio porro nemo iste
-                laborum. Eligendi, laboriosam laborum? Perspiciatis maxime minus ipsa fuga tenetur, soluta repellendus
-                molestiae accusantium deleniti illum incidunt placeat dicta quam aspernatur dolor distinctio quidem id
-                ratione eos! Iure, possimus atque maiores nam quae perferendis quibusdam similique eveniet! Corporis,
-                facere amet! Fugit ducimus neque provident eaque dolore eos corporis ea culpa, quidem, commodi vero
-                atque, assumenda repellat asperiores ad natus nam dicta? Ipsam, sit enim eos cum itaque ipsa architecto
-                accusamus! Quod atque maxime perspiciatis quo nisi. Aliquam eos quas saepe officia autem maiores
-                officiis labore odio impedit neque ea dolor quia voluptatum natus cum, at harum tempore ut sit
-                distinctio aliquid non molestias commodi! Vitae, dolore omnis! Ad commodi culpa accusamus possimus sunt
-                cupiditate enim, saepe architecto temporibus. Possimus asperiores illum debitis error? Quae officia
-                tempore voluptatum fugiat, quidem necessitatibus. Cupiditate perferendis a molestiae nobis mollitia
-                beatae at quo maiores, numquam expedita ad tenetur enim voluptates nisi pariatur soluta. Quidem, rerum
-                inventore laboriosam omnis facilis saepe enim magnam modi recusandae veniam!
+
+
             </p>
         </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
