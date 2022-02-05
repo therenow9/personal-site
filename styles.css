@@ -77,6 +77,10 @@
   width: 60%;
   height: auto;
 }
+.picture-pendant {
+  width: 25%;
+  height: auto;
+}
 @media screen and (min-device-width: 320px) and (max-device-width: 800px) {
   .main-title {
     font-size: 0.8rem;
@@ -122,6 +126,10 @@
   }
   .picture-desktop {
     width: 100%;
+    height: auto;
+  }
+  .picture-pendant {
+    width: 60%;
     height: auto;
   }
   .section-title {
