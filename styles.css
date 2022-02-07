@@ -54,8 +54,10 @@
   font-family: Verdana, sans-serif;
 }
 .body-text {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   font-family: Hand;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 .caption-text {
   font-size: 1.2rem;
@@ -140,10 +142,14 @@
     font-size: 2rem;
   }
   .sub-section-title {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
+    margin-left: 10px;
+    margin-right: 10px;
   }
   .body-text {
     font-size: 1.2rem;
+    margin-left: 20px;
+    margin-right: 20px;
   }
   .skill-list {
     font-size: 1.3rem;
