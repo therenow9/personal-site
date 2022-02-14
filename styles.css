@@ -87,6 +87,15 @@
 .link:hover {
   color: blue;
 }
+.navbar-toggler-icon {
+  font-size: 0.4rem;
+  transform: scale(2, 1);
+}
+.navbar-toggler {
+  font-size: 0.4rem;
+  transform: scale(1.2, 2);
+}
+/* to resize navbar toggler */
 .navbar-toggler:focus,
 .navbar-toggler:active,
 .navbar-toggler-icon:focus {
@@ -110,14 +119,6 @@
     background-color: rgb(51, 2, 131);
     height: 70px;
   }
-  .navbar-toggler-icon {
-    font-size: 0.4rem;
-    transform: scale(2, 1);
-  }
-  .navbar-toggler {
-    font-size: 0.4rem;
-    transform: scale(1.2, 2);
-  }
   .button-text {
     padding-top: 0px;
     font-size: 1rem;
@@ -132,40 +133,51 @@
     width: 100%;
     padding-bottom: 15px;
   }
+  .picture-RJ {
+    height: 60%;
+    width: 60%;
+  }
+  .picture-GM {
+    width: 60%;
+    height: auto;
+  }
+  .picture-demo {
+    width: 70%;
+    height: auto;
+  }
+  .picture-desktop {
+    width: 100%;
+    height: auto;
+  }
+  .picture-pendant {
+    width: 60%;
+    height: auto;
+  }
+  .section-title {
+    font-size: 2rem;
+  }
+  .sub-section-title {
+    font-size: 1.4rem;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .body-text {
+    font-size: 1.2rem;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .skill-list {
+    font-size: 1.3rem;
+  }
 }
-.picture-RJ {
-  height: 60%;
-  width: 60%;
+#skills {
+  padding-top: 40px;
+  margin-top: -40px;
 }
-.picture-GM {
-  width: 60%;
-  height: auto;
+#experience {
+  padding-top: 70px;
+  margin-top: -70px;
 }
-.picture-demo {
-  width: 70%;
-  height: auto;
-}
-.picture-desktop {
-  width: 100%;
-  height: auto;
-}
-.picture-pendant {
-  width: 60%;
-  height: auto;
-}
-.section-title {
-  font-size: 2rem;
-}
-.sub-section-title {
-  font-size: 1.4rem;
-  margin-left: 10px;
-  margin-right: 10px;
-}
-.body-text {
-  font-size: 1.2rem;
-  margin-left: 20px;
-  margin-right: 20px;
-}
-.skill-list {
-  font-size: 1.3rem;
-}
+/* this will make it so clicking these links
+will take you to the correct spot on the page
+before this i was having problems with the anchor */
