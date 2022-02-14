@@ -87,6 +87,20 @@
 .link:hover {
   color: blue;
 }
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+  outline: none;
+  box-shadow: none;
+  color: white;
+}
+.navbar-toggler:focus {
+  background-color: rgb(70, 12, 179);
+}
+.custom-button:focus {
+  background-color: rgb(70, 12, 179);
+}
+/* remove border when dropped down */
 @media screen and (min-device-width: 320px) and (max-device-width: 800px) {
   .main-title {
     font-size: 0.8rem;
@@ -118,40 +132,40 @@
     width: 100%;
     padding-bottom: 15px;
   }
-  .picture-RJ {
-    height: 60%;
-    width: 60%;
-  }
-  .picture-GM {
-    width: 60%;
-    height: auto;
-  }
-  .picture-demo {
-    width: 70%;
-    height: auto;
-  }
-  .picture-desktop {
-    width: 100%;
-    height: auto;
-  }
-  .picture-pendant {
-    width: 60%;
-    height: auto;
-  }
-  .section-title {
-    font-size: 2rem;
-  }
-  .sub-section-title {
-    font-size: 1.4rem;
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-  .body-text {
-    font-size: 1.2rem;
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-  .skill-list {
-    font-size: 1.3rem;
-  }
+}
+.picture-RJ {
+  height: 60%;
+  width: 60%;
+}
+.picture-GM {
+  width: 60%;
+  height: auto;
+}
+.picture-demo {
+  width: 70%;
+  height: auto;
+}
+.picture-desktop {
+  width: 100%;
+  height: auto;
+}
+.picture-pendant {
+  width: 60%;
+  height: auto;
+}
+.section-title {
+  font-size: 2rem;
+}
+.sub-section-title {
+  font-size: 1.4rem;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.body-text {
+  font-size: 1.2rem;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.skill-list {
+  font-size: 1.3rem;
 }
