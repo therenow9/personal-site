@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <!-- My personal website -->
+<!-- written by Jeremy Sceuerman -->
 
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>\
+    <!-- without this jquery navbar togglign was not working properly do not remove -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous" />
     <!--use this above link to include bootstrap in your project -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ"
+        crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <!-- this link above includes bootstrap icons in your project -->
     <link rel="stylesheet" href="styles.css" />
@@ -30,7 +35,7 @@
     <!-- A grey horizontal navbar that becomes vertical on small screens -->
     <div id="about"></div>
     <!-- take back to top of the page -->
-    <nav class="autohide navbar-main navbar navbar-expand-lg navbar-dark sticky-top">
+    <nav class="autohide navbar-main navbar navbar-expand-lg navbar-dark fixed-top">
         <!-- py-3 adds some padding on the y-axis -->
         <div class="container-fluid">
             <!-- container class used to create a margin -->
@@ -71,7 +76,7 @@
             construction
             and is only in its initial stages, expect changes !!
         </div>  -->
-        <div class="section-title text-center bold">About Me
+        <div class="section-title text-center bold about">About Me
         </div>
         <img src="images\Rj_and_I.jpg" class="picture-RJ img-fluid max-width:100% height:auto rounded mx-auto d-block"
             alt="">
@@ -142,18 +147,13 @@
                     </div>
                     <div class="col-xs-12 col-sm-6 col-md-8"><i class="fas fa-network-wired"></i> Networking
                     </div>
-                    <!--  -->
                     <a id="experience"><a>
+                            <!-- anchor link for href -->
                 </div>
             </div>
         </div>
     </div>
     <div class="container py-4">
-        <!--
-                <div class="warning-title text-center bold">!!Caution this website is currently undergoing creation/
-                    construction
-                    and is only in its initial stages, expect changes !!
-                </div>  -->
         <div class="section-title text-center bold">Experience
         </div>
         <div class="py-2 text-center body-text">
@@ -284,7 +284,6 @@
             have completed
             are available to view on my GitHub.
         </p>
-
     </div>
     <div class="sub-section-title text-center bold">Internship with Johns Hopkins
     </div>
@@ -474,12 +473,8 @@
         </div>
     </div>
     <div class="container">
-        <!--
-                        <div class="warning-title text-center bold">!!Caution this website is currently undergoing creation/
-                            construction
-                            and is only in its initial stages, expect changes !!
-                        </div>  -->
         <div id="contact"></div>
+        <!-- info to contact me -->
         <div class="section-title text-center bold">Contact Me
         </div>
         <div class="py-2 text-center body-text">
@@ -495,6 +490,7 @@
         integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ"
         crossorigin="anonymous"></script>
     <script src="scripts.js"></script>
+    <!-- bootsrtap navbar this must stay at the bottom for the auto closing to work -->
 </body>
 
 </html>

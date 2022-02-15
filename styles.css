@@ -1,13 +1,17 @@
 .content {
   margin-left: auto;
   margin-right: auto;
+  padding-top: 80px;
+  /* adding padding to top to put about title below navbar */
 }
 .navbar-main {
   background-color: rgb(51, 2, 131);
   height: 70px;
   padding-top: 0%;
   padding-bottom: 0%;
+  /* navbar tweaking */
 }
+
 .main-title {
   background-color: rgb(51, 2, 131);
   color: white;
@@ -15,15 +19,18 @@
   font-size: 1.3em;
   font-weight: 600;
   box-shadow: none;
+  /* main title for site */
 }
 .button-text {
   color: white;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1rem;
+  /* text for navbar dropdown  */
 }
 
 .button-text:hover {
   color: rgb(255, 255, 255);
+  /* navbar text color change on hover */
 }
 .button {
   padding-top: 15px;
@@ -38,6 +45,8 @@
   height: 70px;
   text-align: center;
 }
+/* format some buttons for navbar */
+
 .warning-title {
   font-size: 2rem;
   font-weight: bold;
@@ -67,6 +76,7 @@
   font-size: 1.6rem;
   font-family: Hand;
 }
+/* formatting text sizes fonts and colors */
 .picture-GM {
   width: 20%;
   height: auto;
@@ -83,7 +93,7 @@
   width: 25%;
   height: auto;
 }
-
+/* resize some pictures to scale */
 .link:hover {
   color: blue;
 }
@@ -95,7 +105,7 @@
   font-size: 0.4rem;
   transform: scale(1.2, 2);
 }
-/* to resize navbar toggler */
+/* to resize navbar toggler icon, this can be finnicky */
 .navbar-toggler:focus,
 .navbar-toggler:active,
 .navbar-toggler-icon:focus {
@@ -103,14 +113,32 @@
   box-shadow: none;
   color: white;
 }
+/* remove navbar highlight on click */
 .navbar-toggler:focus {
   background-color: rgb(70, 12, 179);
 }
 .custom-button:focus {
   background-color: rgb(70, 12, 179);
 }
-/* remove border when dropped down */
+/* remove border when dropped down adds different background color instead */
+#skills {
+  padding-top: 40px;
+  margin-top: -40px;
+}
+#experience {
+  padding-top: 70px;
+  margin-top: -70px;
+}
+#about {
+  padding-top: 70px;
+  margin-top: -70px;
+}
+/* this will make it so clicking these links
+will take you to the correct spot on the page
+before this i was having problems with the anchor */
+
 @media screen and (min-device-width: 320px) and (max-device-width: 800px) {
+  /* MEdia queries to adjust all of these relative to phone screens */
   .main-title {
     font-size: 0.8rem;
     transform: scale(1, 1.5);
@@ -170,14 +198,3 @@
     font-size: 1.3rem;
   }
 }
-#skills {
-  padding-top: 40px;
-  margin-top: -40px;
-}
-#experience {
-  padding-top: 70px;
-  margin-top: -70px;
-}
-/* this will make it so clicking these links
-will take you to the correct spot on the page
-before this i was having problems with the anchor */
