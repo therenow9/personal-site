@@ -41,6 +41,7 @@
 .button:hover {
   background-color: rgb(70, 12, 179);
 }
+/* navbar change background on hover */
 .custom-button {
   height: 70px;
   text-align: center;
@@ -53,7 +54,7 @@
   color: rgb(189, 13, 13);
   font-family: Verdana, sans-serif;
 }
-
+/* title for under construction warning */
 .section-title {
   font-size: 2.4rem;
   font-family: Verdana, sans-serif;
@@ -111,7 +112,6 @@
 .navbar-toggler-icon:focus {
   outline: none;
   box-shadow: none;
-  color: white;
 }
 /* remove navbar highlight on click */
 .navbar-toggler:focus {
@@ -135,7 +135,7 @@
 }
 /* this will make it so clicking these links
 will take you to the correct spot on the page
-before this i was having problems with the anchor */
+before this i was having problems with the anchor adding padding and a negative margin seems to be a good work around for this */
 
 @media screen and (min-device-width: 320px) and (max-device-width: 800px) {
   /* MEdia queries to adjust all of these relative to phone screens */
@@ -166,7 +166,7 @@ before this i was having problems with the anchor */
     width: 60%;
   }
   .picture-GM {
-    width: 60%;
+    width: 80%;
     height: auto;
   }
   .picture-demo {

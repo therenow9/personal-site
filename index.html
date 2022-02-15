@@ -39,10 +39,11 @@
         <!-- py-3 adds some padding on the y-axis -->
         <div class="container-fluid">
             <!-- container class used to create a margin -->
-            <div class="navbar-brand main-title">Jeremy Scheuerman's Digital Portfolio</div>
+            <div class="navbar-brand main-title ">Jeremy Scheuerman's Digital Portfolio</div>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu"
                 aria-controls="nav-menu" aria-expanded="false" aria-label="Toggle navigation">
                 <!-- targets the nav menu so making it that that is what collapses in the hamburger menu -->
+                <!-- aria controls are for accesibility controls  -->
                 <span class="navbar-toggler-icon">
                     <!-- adds hamburger symbol -->
                 </span>
@@ -61,10 +62,7 @@
                         <a class="nav-link button-text text-center" href="#experience">Experience</a>
                     </li>
                     <li class="nav-item button custom-button">
-                        <a class="nav-link button-text text-center" href="#links">Links</a>
-                    </li>
-                    <li class="nav-item button custom-button">
-                        <a class="nav-link button-text text-center" href="#contact">Contact Me</a>
+                        <a class="nav-link button-text text-center" href="#links">Links / Contact Me</a>
                     </li>
                 </ul>
             </div>
@@ -467,13 +465,12 @@
                             href="documents\Resume_jeremy_scheuerman.pdf">Resume</a>
                     </div>
                     <!--  -->
-                    <div id="links"></div>
+                    <a id="links"></a>
                 </div>
             </div>
         </div>
     </div>
     <div class="container">
-        <div id="contact"></div>
         <!-- info to contact me -->
         <div class="section-title text-center bold">Contact Me
         </div>
@@ -486,11 +483,8 @@
             </div>
         </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ"
-        crossorigin="anonymous"></script>
     <script src="scripts.js"></script>
-    <!-- bootsrtap navbar this must stay at the bottom for the auto closing to work -->
+    <!-- This JS code fixes the navbar autoclosing issue, must stay here at the bottom to work -->
 </body>
 
 </html>
