@@ -66,15 +66,15 @@
 .body-text {
   font-size: 1.5rem;
   font-family: Hand;
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 .caption-text {
   font-size: 1.4rem;
   font-family: Hand;
 }
 .skill-list {
-  font-size: 1.6rem;
+  font-size: 2rem;
   font-family: Hand;
 }
 /* formatting text sizes fonts and colors */
@@ -186,13 +186,13 @@ before this i was having problems with the anchor adding padding and a negative 
   }
   .sub-section-title {
     font-size: 1.4rem;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 5%;
+    margin-right: 5%;
   }
   .body-text {
     font-size: 1.2rem;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 7%;
+    margin-right: 7%;
   }
   .skill-list {
     font-size: 1.3rem;
