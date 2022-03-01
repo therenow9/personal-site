@@ -123,6 +123,11 @@
   width: 25%;
   height: auto;
 }
+.picture-fullstack {
+  padding-top: 15px;
+  width: 30%;
+  height: auto;
+}
 .picture-wgu {
   padding-top: 20px;
   width: 30%;
@@ -249,6 +254,11 @@ before this i was having problems with the anchor adding padding and a negative 
     height: auto;
   }
   .picture-code {
+    padding-top: 15px;
+    width: 90%;
+    height: auto;
+  }
+  .picture-fullstack {
     padding-top: 15px;
     width: 90%;
     height: auto;
