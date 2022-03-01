@@ -68,8 +68,10 @@
   font-family: Hand;
   margin-left: 5%;
   margin-right: 5%;
+  padding-top: 20px;
 }
 .caption-text {
+  padding-top: 10px;
   font-size: 1.4rem;
   font-family: Hand;
 }
@@ -78,7 +80,14 @@
   font-family: Hand;
 }
 /* formatting text sizes fonts and colors */
+.picture-RJ {
+  height: auto;
+  width: auto;
+  padding-top: 20px;
+  padding-bottom: 15px;
+}
 .picture-GM {
+  margin-top: -20px;
   width: 20%;
   height: auto;
 }
@@ -91,7 +100,32 @@
   height: auto;
 }
 .picture-pendant {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  width: 30%;
+  height: auto;
+}
+.picture-su {
+  padding-bottom: 10px;
+  width: 30%;
+  height: auto;
+}
+.picture-jhu {
+  width: 30%;
+  height: auto;
+}
+.picture-ubuntu {
   width: 25%;
+  height: auto;
+}
+.picture-code {
+  padding-top: 15px;
+  width: 25%;
+  height: auto;
+}
+.picture-wgu {
+  padding-top: 20px;
+  width: 30%;
   height: auto;
 }
 /* resize some pictures to scale */
@@ -122,8 +156,8 @@
 }
 /* remove border when dropped down adds different background color instead */
 #skills {
-  padding-top: 40px;
-  margin-top: -40px;
+  padding-top: 45px;
+  margin-top: -45px;
 }
 #experience {
   padding-top: 70px;
@@ -132,6 +166,13 @@
 #about {
   padding-top: 70px;
   margin-top: -70px;
+}
+#links {
+  padding-top: 20px;
+  padding-bottom: 0px;
+}
+.links-body {
+  padding-top: 15px;
 }
 /* this will make it so clicking these links
 will take you to the correct spot on the page
@@ -153,6 +194,7 @@ before this i was having problems with the anchor adding padding and a negative 
     height: 15px;
   }
   .caption-text {
+    padding-top: 5px;
     font-size: 1rem;
   }
   .custom-button {
@@ -164,13 +206,15 @@ before this i was having problems with the anchor adding padding and a negative 
   .picture-RJ {
     height: 60%;
     width: 60%;
+    padding-bottom: 10px;
   }
   .picture-GM {
-    width: 80%;
+    margin-top: -30px;
+    width: 800%;
     height: auto;
   }
   .picture-demo {
-    width: 70%;
+    width: 100%;
     height: auto;
   }
   .picture-desktop {
@@ -178,14 +222,39 @@ before this i was having problems with the anchor adding padding and a negative 
     height: auto;
   }
   .picture-pendant {
-    width: 60%;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    width: 90%;
+    height: auto;
+  }
+  .picture-wgu {
+    width: 90%;
+    height: auto;
+    padding-top: 10px;
+  }
+  .picture-su {
+    padding-bottom: 10px;
+    width: 85%;
+    height: auto;
+  }
+  .picture-jhu {
+    width: 90%;
+    height: auto;
+  }
+  .picture-ubuntu {
+    width: 90%;
+    height: auto;
+  }
+  .picture-code {
+    padding-top: 15px;
+    width: 90%;
     height: auto;
   }
   .section-title {
-    font-size: 2rem;
+    font-size: 2.1rem;
   }
   .sub-section-title {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     margin-left: 5%;
     margin-right: 5%;
   }
@@ -193,8 +262,12 @@ before this i was having problems with the anchor adding padding and a negative 
     font-size: 1.2rem;
     margin-left: 7%;
     margin-right: 7%;
+    padding-top: 5%;
   }
   .skill-list {
     font-size: 1.3rem;
+  }
+  .links-body {
+    padding-top: 15px;
   }
 }
