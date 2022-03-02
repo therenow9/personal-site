@@ -160,6 +160,13 @@
   background-color: rgb(70, 12, 179);
 }
 /* remove border when dropped down adds different background color instead */
+.note {
+  font-style: italic;
+  font-weight: bold;
+}
+.table-flex {
+  text-align: center;
+}
 #skills {
   padding-top: 55px;
   margin-top: -55px;
@@ -278,7 +285,7 @@ before this i was having problems with the anchor adding padding and a negative 
     padding-top: 5%;
   }
   .skill-list {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
   }
   .links-body {
     padding-top: 15px;
