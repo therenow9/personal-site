@@ -59,6 +59,11 @@
   font-size: 2.4rem;
   font-family: Verdana, sans-serif;
 }
+.exp-sub-section-title {
+  font-size: 2.1rem;
+  font-family: Verdana, sans-serif;
+  text-align: center;
+}
 .sub-section-title {
   font-size: 1.8rem;
   font-family: Verdana, sans-serif;
@@ -272,6 +277,10 @@ before this i was having problems with the anchor adding padding and a negative 
   }
   .section-title {
     font-size: 2.1rem;
+  }
+  .exp-sub-section-title {
+    font-size: 1.9rem;
+    font-family: Verdana, sans-serif;
   }
   .sub-section-title {
     font-size: 1.6rem;
