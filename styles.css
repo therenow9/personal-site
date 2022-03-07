@@ -68,6 +68,8 @@
 .sub-section-title {
   font-size: 1.8rem;
   font-family: Verdana, sans-serif;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 .body-text {
   font-size: 1.5rem;
@@ -129,7 +131,7 @@
   width: 25%;
   height: auto;
 }
-.picture-fullstack {
+.picture-javascript {
   padding-top: 15px;
   width: 30%;
   height: auto;
@@ -199,6 +201,44 @@
 will take you to the correct spot on the page
 before this i was having problems with the anchor adding padding and a negative margin seems to be a good work around for this */
 
+/* animate sprite */
+#earl-sprite-container {
+  padding-top: 15px;
+  display: block;
+  /* animation: move 15s infinite forwards; */
+  margin-left: -5%;
+  margin-right: auto;
+  overflow: hidden;
+  /* make it so the scroll bar dosent show up at the bottom */
+}
+#earl-sprite {
+  width: 102px;
+  /* spritesheet width divided by number of frames in sprite sheet, 306/3 */
+  height: 54px;
+  /* height of actual image */
+  background: url(images/sprites/earl/slug_102x54_strip3.png) 0px 0px;
+  /* animating this sprite */
+  transform: scaleX(-1);
+  /* flip image to the other side */
+  animation: play steps(3) infinite 1.2s, move 40s linear infinite;
+  /* aninmates the actual sprite */
+  /* animation: move infinite; */
+  overflow: hidden;
+}
+@keyframes play {
+  100% {
+    background-position: 306px;
+    /* entire sprite sheet width */
+  }
+}
+@keyframes move {
+  from {
+    margin-left: -5%;
+  }
+  to {
+    margin-left: 105%;
+  }
+}
 @media screen and (min-device-width: 320px) and (max-device-width: 800px) {
   /* MEdia queries to adjust all of these relative to phone screens */
   .main-title {
@@ -271,7 +311,7 @@ before this i was having problems with the anchor adding padding and a negative 
     width: 90%;
     height: auto;
   }
-  .picture-fullstack {
+  .picture-javascript {
     padding-top: 15px;
     width: 90%;
     height: auto;
@@ -302,5 +342,11 @@ before this i was having problems with the anchor adding padding and a negative 
   }
   #mail {
     padding-bottom: 20px;
+  }
+  #earl-sprite {
+    animation: play steps(3) infinite 1s, move 15s linear infinite;
+  }
+  #earl-sprite-container {
+    margin-left: -100px;
   }
 }
