@@ -162,10 +162,10 @@
 }
 /* remove navbar highlight on click */
 .navbar-toggler:focus {
-  background-color: rgb(52, 49, 212);
+  background-color: rgb(4, 1, 175);
 }
 .custom-button:focus {
-  background-color: rgb(104, 102, 212);
+  background-color: rgb(41, 39, 211);
 }
 /* remove border when dropped down adds different background color instead */
 .note {
