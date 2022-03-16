@@ -2,7 +2,7 @@
   margin-left: auto;
   margin-right: auto;
   padding-top: 80px;
-  background-color: rgb(161, 182, 240);
+  background-color: rgb(203, 215, 246);
   /* adding padding to top to put about title below navbar */
 }
 .navbar-main {
@@ -12,7 +12,10 @@
   padding-bottom: 0%;
   /* navbar tweaking */
 }
-
+.space {
+  /* some small padding */
+  padding-top: 2.5%;
+}
 .main-title {
   background-color: rgb(4, 1, 175);
   color: white;
@@ -57,91 +60,106 @@
 }
 /* title for under construction warning */
 .section-title {
-  font-size: 2.4rem;
-  font-family: Verdana, sans-serif;
-}
-.exp-sub-section-title {
-  font-size: 2.1rem;
+  font-size: 2.6rem;
   font-family: Verdana, sans-serif;
   text-align: center;
 }
+
 .sub-section-title {
-  font-size: 1.8rem;
+  font-size: 1.9rem;
   font-family: Verdana, sans-serif;
   margin-left: 5%;
   margin-right: 5%;
+  text-align: center;
+}
+.exp {
+  font-size: 2.5rem;
+  padding-bottom: 1.5%;
 }
 .body-text {
   font-size: 1.5rem;
   font-family: Hand;
   margin-left: 5%;
   margin-right: 5%;
-  padding-top: 20px;
+  padding-top: 1%;
+  text-align: center;
 }
 .caption-text {
-  padding-top: 10px;
+  padding-top: 0%;
   font-size: 1.4rem;
   font-family: Hand;
+  text-align: center;
 }
 .skill-list {
   font-size: 2rem;
   font-family: Hand;
 }
 /* formatting text sizes fonts and colors */
-.picture-RJ {
+
+/* pictures and flexbox */
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.picture {
+  /* set width to a percentage */
   height: auto;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  align-self: center;
+}
+.rounded {
+  border-radius: 25px;
+  /* rounds corners */
+}
+.align-image {
+  /* nest around image tag to align single image */
+  text-align: center;
+}
+.pic-RJ {
   width: auto;
   padding-top: 20px;
   padding-bottom: 15px;
 }
-.picture-GM {
+.pic-GM {
   margin-top: -20px;
-  width: 20%;
-  height: auto;
+  width: 30%;
 }
-.picture-demo {
+.pic-demo {
   width: 35%;
-  height: auto;
 }
-.picture-desktop {
+.pic-desktop {
   width: 60%;
-  height: auto;
 }
-.picture-pendant {
-  padding-top: 20px;
-  padding-bottom: 10px;
+.pic-pendant {
   width: 30%;
-  height: auto;
 }
-.picture-su {
-  padding-bottom: 10px;
+.pic-su {
   width: 30%;
-  height: auto;
 }
-.picture-jhu {
+.pic-jhu {
   width: 30%;
-  height: auto;
 }
-.picture-ubuntu {
+.pic-ubuntu {
   width: 25%;
-  height: auto;
 }
-.picture-code {
-  padding-top: 15px;
+.pic-code {
   width: 25%;
-  height: auto;
 }
-.picture-javascript {
-  padding-top: 15px;
+.pic-javascript {
   width: 30%;
-  height: auto;
 }
-.picture-wgu {
-  padding-top: 20px;
+.pic-wgu {
   width: 30%;
-  height: auto;
 }
 /* resize some pictures to scale */
+.link {
+  padding-bottom: 6%;
+}
 .link:hover {
   color: blue;
 }
@@ -255,8 +273,8 @@ before this i was having problems with the anchor adding padding and a negative 
     height: 15px;
   }
   .caption-text {
-    padding-top: 5px;
-    font-size: 1rem;
+    padding-top: 2%;
+    font-size: 1.1rem;
   }
   .custom-button {
     height: 50px;
@@ -264,69 +282,54 @@ before this i was having problems with the anchor adding padding and a negative 
     width: 100%;
     padding-bottom: 15px;
   }
-  .picture-RJ {
-    height: 60%;
+  .picture {
+    padding-top: 2%;
+    padding-bottom: 1%;
+  }
+  .pic-RJ {
     width: 60%;
-    padding-bottom: 10px;
   }
-  .picture-GM {
+  .pic-GM {
     margin-top: -30px;
-    width: 800%;
-    height: auto;
+    width: 80%;
   }
-  .picture-demo {
+  .pic-demo {
     width: 100%;
-    height: auto;
   }
-  .picture-desktop {
+  .pic-desktop {
     width: 100%;
-    height: auto;
   }
-  .picture-pendant {
-    padding-top: 10px;
-    padding-bottom: 5px;
+  .pic-pendant {
     width: 90%;
-    height: auto;
   }
-  .picture-wgu {
+  .pic-wgu {
     width: 90%;
-    height: auto;
-    padding-top: 10px;
   }
-  .picture-su {
-    padding-bottom: 10px;
+  .pic-su {
     width: 85%;
-    height: auto;
   }
-  .picture-jhu {
+  .pic-jhu {
     width: 90%;
-    height: auto;
   }
-  .picture-ubuntu {
+  .pic-ubuntu {
     width: 90%;
-    height: auto;
   }
-  .picture-code {
-    padding-top: 15px;
+  .pic-code {
     width: 90%;
-    height: auto;
   }
-  .picture-javascript {
-    padding-top: 15px;
+  .pic-javascript {
     width: 90%;
-    height: auto;
   }
   .section-title {
     font-size: 2.1rem;
-  }
-  .exp-sub-section-title {
-    font-size: 1.9rem;
-    font-family: Verdana, sans-serif;
   }
   .sub-section-title {
     font-size: 1.6rem;
     margin-left: 5%;
     margin-right: 5%;
+  }
+  .exp {
+    font-size: 1.9rem;
   }
   .body-text {
     font-size: 1.2rem;
