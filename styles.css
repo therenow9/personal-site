@@ -31,7 +31,6 @@
   font-size: 1rem;
   /* text for navbar dropdown  */
 }
-
 .button-text:hover {
   color: rgb(255, 255, 255);
   /* navbar text color change on hover */
@@ -89,6 +88,8 @@
   font-size: 1.4rem;
   font-family: Hand;
   text-align: center;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 .skill-list {
   font-size: 2rem;
@@ -102,9 +103,18 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  margin-left: 5%;
-  margin-right: 5%;
+  margin-left: 2%;
+  margin-right: 2%;
 }
+
+.grid-skills {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 3;
+  grid-template-rows: 3;
+  grid-auto-rows: 90%;
+}
+
 .picture {
   /* set width to a percentage */
   height: auto;
@@ -130,7 +140,7 @@
   width: 30%;
 }
 .pic-demo {
-  width: 35%;
+  width: 30%;
 }
 .pic-desktop {
   width: 60%;
@@ -147,7 +157,13 @@
 .pic-ubuntu {
   width: 25%;
 }
-.pic-code {
+.pic-apache {
+  width: 20%;
+}
+.pic-server {
+  width: 15%;
+}
+.pic-web-code {
   width: 25%;
 }
 .pic-javascript {
@@ -156,6 +172,7 @@
 .pic-wgu {
   width: 30%;
 }
+
 /* resize some pictures to scale */
 .link {
   padding-bottom: 6%;
@@ -294,7 +311,8 @@ before this i was having problems with the anchor adding padding and a negative 
     width: 80%;
   }
   .pic-demo {
-    width: 100%;
+    width: 75%;
+    padding-top: 5%;
   }
   .pic-desktop {
     width: 100%;
@@ -312,10 +330,17 @@ before this i was having problems with the anchor adding padding and a negative 
     width: 90%;
   }
   .pic-ubuntu {
-    width: 90%;
+    width: 50%;
   }
-  .pic-code {
-    width: 90%;
+  .pic-apache {
+    width: 40%;
+  }
+  .pic-server {
+    width: 30%;
+  }
+  .pic-web-code {
+    width: 40%;
+    padding-bottom: 5%;
   }
   .pic-javascript {
     width: 90%;
