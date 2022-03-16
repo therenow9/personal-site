@@ -40,7 +40,7 @@
   font-size: large;
 }
 .button:hover {
-  background-color: rgb(43, 41, 199);
+  background-color: rgb(35, 32, 190);
 }
 /* navbar change background on hover */
 .custom-button {
@@ -162,10 +162,10 @@
 }
 /* remove navbar highlight on click */
 .navbar-toggler:focus {
-  background-color: rgb(70, 12, 179);
+  background-color: rgb(52, 49, 212);
 }
 .custom-button:focus {
-  background-color: rgb(70, 12, 179);
+  background-color: rgb(104, 102, 212);
 }
 /* remove border when dropped down adds different background color instead */
 .note {
@@ -246,7 +246,7 @@ before this i was having problems with the anchor adding padding and a negative 
     transform: scale(1, 1.5);
   }
   .navbar-main {
-    background-color: rgb(51, 2, 131);
+    background-color: rgb(4, 1, 175);
     height: 70px;
   }
   .button-text {
