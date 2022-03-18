@@ -209,6 +209,15 @@ figure out how to replace this bootstrap code with grid
 .pic-wgu {
   width: 30%;
 }
+.pic-bagel {
+  width: 20%;
+}
+.pic-humane {
+  width: 20%;
+}
+.pic-arboretum {
+  width: 20%;
+}
 
 /* resize some pictures to scale */
 .link {
@@ -381,6 +390,15 @@ before this i was having problems with the anchor adding padding and a negative 
   }
   .pic-javascript {
     width: 90%;
+  }
+  .pic-bagel {
+    width: 25%;
+  }
+  .pic-humane {
+    width: 25%;
+  }
+  .pic-arboretum {
+    width: 25%;
   }
   .section-title {
     font-size: 2.1rem;
