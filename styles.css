@@ -125,6 +125,7 @@
   justify-content: space-evenly;
 }
 .grid-item {
+    position: relative;
   justify-content: center;
   text-align: center;
 }
