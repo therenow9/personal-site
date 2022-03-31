@@ -87,11 +87,6 @@
   font-size: 2rem;
   font-family: Hand;
   list-style-type: none;
-  text-align: center;
-  margin: 0;
-  padding: 0;
-}
-.skill-list {
   padding-top: 1%;
   padding-bottom: 1%;
 }
@@ -113,23 +108,20 @@
 }
 /* figure out how to replace this bootstrap code with grid */
 .grid-container {
-  position: relative;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
   padding: 0%;
   display: grid;
   grid-template-columns: repeat(auto-fit, 30%);
-  grid-template-rows: repeat(auto-fit, 90%);
+  grid-template-rows: repeat(auto, 90%);
   grid-gap: 0.3rem;
   justify-content: space-evenly;
 }
 .grid-item {
-    position: relative;
   justify-content: center;
   text-align: center;
 }
-
 .picture {
   /* set width to a percentage */
   height: auto;
