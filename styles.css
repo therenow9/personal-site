@@ -50,14 +50,6 @@
   text-align: center;
 }
 /* format some buttons for navbar */
-
-.warning-title {
-  font-size: 2rem;
-  font-weight: bold;
-  color: rgb(189, 13, 13);
-  font-family: Verdana, sans-serif;
-}
-/* title for under construction warning */
 .section-title {
   font-size: 2.6rem;
   font-family: Verdana, sans-serif;
@@ -121,6 +113,7 @@
 }
 /* figure out how to replace this bootstrap code with grid */
 .grid-container {
+  position: relative;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -423,11 +416,8 @@ before this i was having problems with the anchor adding padding and a negative 
     grid-template-columns: repeat(auto-fit, 45%);
   }
 }
-@media screen and (max-width: 559px) {
-  .desktop-view {
-    display: none;
-  }
-  .mobile-view {
-    display: initial;
+@media print {
+  .content {
+    background-color: rgb(255, 255, 255);
   }
 }
