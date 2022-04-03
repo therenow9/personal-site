@@ -137,8 +137,8 @@
   /* nest around image tag to align single image */
   text-align: center;
 }
-.pic-RJ {
-  width: auto;
+.pic-me {
+  width: 15%;
   padding-top: 20px;
   padding-bottom: 15px;
 }
@@ -323,8 +323,8 @@ before this i was having problems with the anchor adding padding and a negative 
     padding-top: 2%;
     padding-bottom: 1%;
   }
-  .pic-RJ {
-    width: 60%;
+  .pic-me {
+    width: 65%;
   }
   .pic-GM {
     margin-top: -30px;
