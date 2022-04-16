@@ -359,6 +359,9 @@ before this i was having problems with the anchor adding padding and a negative 
   .comp-list {
     font-size: 1.35rem;
   }
+  .comp-item {
+    padding-left: 15%;
+  }
   .picture {
     padding-top: 2%;
     padding-bottom: 1%;
@@ -450,6 +453,9 @@ before this i was having problems with the anchor adding padding and a negative 
 @media screen and (min-width: 600px) and (max-width: 900px) {
   .grid-container {
     grid-template-columns: repeat(auto-fit, 45%);
+  }
+  .comp-item {
+    padding-left: 35%;
   }
 }
 @media print {
