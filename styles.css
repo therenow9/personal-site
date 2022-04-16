@@ -93,7 +93,7 @@
 }
 .comp-title {
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   font-style: italic;
 }
 .comp-list {
@@ -352,6 +352,12 @@ before this i was having problems with the anchor adding padding and a negative 
   .grid-container,
   .comp-container {
     grid-template-columns: repeat(auto-fit, 90%);
+  }
+  .comp-title {
+    font-size: 1.45rem;
+  }
+  .comp-list {
+    font-size: 1.35rem;
   }
   .picture {
     padding-top: 2%;
