@@ -1,62 +1,109 @@
 .content {
   margin-left: auto;
   margin-right: auto;
-  padding-top: 80px;
   background-color: rgb(203, 215, 246);
   /* adding padding to top to put about title below navbar */
 }
-.navbar-main {
-  background-color: rgb(4, 1, 175);
-  height: 70px;
-  padding-top: 0%;
-  padding-bottom: 0%;
-  /* navbar tweaking */
+/* navbar styles */
+/* nav styles */
+.title {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.4rem;
+  color: white;
+  padding-left: 10px;
+  margin-left: 20px;
+}
+.nav-container {
+  margin-top: -28px;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: navy;
+  height: 55px;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+}
+
+.logo {
+  font-size: 1.8rem;
+  padding-left: 20px;
+}
+.my-logo {
+  padding-top: 0px;
+  height: 45px;
+  width: auto;
+}
+.logo-image {
+  width: 60%;
+  height: auto;
+}
+.hamburger {
+  padding-right: 20px;
+  cursor: pointer;
+}
+
+.hamburger .line {
+  display: block;
+  width: 40px;
+  height: 5px;
+  margin-bottom: 5px;
+  background-color: white;
+}
+.hamburger:hover .line {
+  /* background-color */
+  background-color: lightsteelblue;
+}
+.hide {
+  display: none;
+}
+/* desktop first rules */
+.nav__link {
+  display: block;
+  position: static;
+  width: auto;
+  background-color: navy;
+  margin-right: 10px;
+  font-size: 0.8rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav-box {
+  width: 112px;
+  display: inline-block;
+  padding: 7px 15px;
+  height: default;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.nav-box:hover {
+  background-color: #0000cc;
+  color: lightsteelblue;
+}
+.hamburger {
+  display: none;
 }
 .space {
   /* some small padding */
   padding-top: 2.5%;
-}
-.main-title {
-  background-color: rgb(4, 1, 175);
-  color: white;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.3em;
-  font-weight: 600;
-  box-shadow: none;
-  /* main title for site */
-}
-.button-text {
-  color: white;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 1rem;
-  /* text for navbar dropdown  */
-}
-.button-text:hover {
-  color: rgb(255, 255, 255);
-  /* navbar text color change on hover */
-}
-.button {
-  padding-top: 15px;
-  background-color: rgb(4, 1, 175);
-  color: rgb(255, 255, 255);
-  font-size: large;
-}
-.button:hover {
-  background-color: rgb(35, 32, 190);
-}
-/* navbar change background on hover */
-.custom-button {
-  height: 70px;
-  text-align: center;
 }
 /* format some buttons for navbar */
 .section-title {
   font-size: 2.6rem;
   font-family: Verdana, sans-serif;
   text-align: center;
+  font-weight: bold;
 }
 
 .sub-section-title {
+  font-weight: lighter;
   font-size: 1.9rem;
   font-family: Verdana, sans-serif;
   margin-left: 5%;
@@ -95,8 +142,10 @@
   text-align: center;
   font-size: 1.6rem;
   font-style: italic;
+  font-weight: bolder;
 }
 .comp-list {
+  width: 100%;
   font-size: 1.6rem;
   font-family: Hand;
   list-style-type: disc;
@@ -107,9 +156,6 @@
 }
 .comp-container {
   width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0%;
   display: grid;
   grid-template-columns: repeat(auto-fit, 45%);
   grid-template-rows: repeat(auto, 90%);
@@ -141,13 +187,13 @@
   margin-right: auto;
   padding: 0%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, 30%);
+  grid-template-columns: repeat(auto-fit, 33%);
   grid-template-rows: repeat(auto, 90%);
-  grid-gap: 0.3rem;
-  justify-content: space-evenly;
+  grid-gap: 0.5rem;
+  justify-content: center;
 }
 .grid-item {
-  justify-content: center;
+  justify-content: space-evenly;
   text-align: center;
 }
 .picture {
@@ -158,7 +204,7 @@
   align-self: center;
 }
 .rounded {
-  border-radius: 25px;
+  border-radius: 10px;
   /* rounds corners */
 }
 .align-image {
@@ -224,28 +270,6 @@
 .link:hover {
   color: blue;
 }
-.navbar-toggler-icon {
-  font-size: 0.4rem;
-  transform: scale(2, 1);
-}
-.navbar-toggler {
-  font-size: 0.4rem;
-  transform: scale(1.2, 2);
-}
-/* to resize navbar toggler icon, this can be finnicky */
-.navbar-toggler:focus,
-.navbar-toggler:active,
-.navbar-toggler-icon:focus {
-  outline: none;
-  box-shadow: none;
-}
-/* remove navbar highlight on click */
-.navbar-toggler:focus {
-  background-color: rgb(4, 1, 175);
-}
-.custom-button:focus {
-  background-color: rgb(41, 39, 211);
-}
 /* remove border when dropped down adds different background color instead */
 .note {
   font-style: italic;
@@ -263,12 +287,11 @@
   margin-top: -60px;
 }
 #projects {
-  padding-top: 75px;
-  margin-top: -75px;
+  padding-top: 60px;
+  margin-top: -60px;
 }
 #about {
-  padding-top: 75px;
-  margin-top: -75px;
+  padding-top: 70px;
 }
 #links {
   padding-top: 30px;
@@ -321,33 +344,63 @@ before this i was having problems with the anchor adding padding and a negative 
   }
 }
 
-.mobile-view {
-  display: none;
+/* Desktop Design */
+
+@media screen and (min-width: 320px) and (max-width: 500px) {
+  .comp-item {
+    margin-left: -35%;
+    margin-right: 8%;
+  }
 }
 @media screen and (min-width: 320px) and (max-width: 800px) {
+  /* navbar styles */
   /* MEdia queries to adjust all of these relative to phone screens */
-  .main-title {
-    font-size: 0.8rem;
-    transform: scale(1, 1.5);
+  /* mobile media queries */
+  .nav-container {
+    margin-top: -23px;
   }
-  .navbar-main {
-    background-color: rgb(4, 1, 175);
-    height: 70px;
-  }
-  .button-text {
-    padding-top: 0px;
+  .title {
     font-size: 1rem;
-    height: 15px;
+    padding-left: 15px;
+    margin-left: 0px;
+    margin-right: 1px;
+  }
+  /* Mobile rules */
+  .nav__link {
+    position: fixed;
+    width: 100%;
+    top: 3.46rem;
+  }
+  .nav-box {
+    width: 100%;
+    display: block;
+    text-align: center;
+    padding: 4px 0;
+  }
+  .nav-box:hover {
+    background-color: #0000cc;
+    color: lightsteelblue;
+  }
+  .hamburger {
+    display: block;
+  }
+  .hide {
+    display: none;
+  }
+  .hamburger {
+    padding-right: 10px;
+  }
+
+  .hamburger .line {
+    display: block;
+    width: 30px;
+    height: 3px;
+    margin-bottom: 5px;
+    margin-right: 5px;
   }
   .caption-text {
     padding-top: 2%;
     font-size: 1.1rem;
-  }
-  .custom-button {
-    height: 50px;
-    text-align: center;
-    width: 100%;
-    padding-bottom: 15px;
   }
   .grid-container,
   .comp-container {
@@ -359,9 +412,7 @@ before this i was having problems with the anchor adding padding and a negative 
   .comp-list {
     font-size: 1.35rem;
   }
-  .comp-item {
-    padding-left: 15%;
-  }
+
   .picture {
     padding-top: 2%;
     padding-bottom: 1%;
@@ -409,10 +460,10 @@ before this i was having problems with the anchor adding padding and a negative 
     width: 90%;
   }
   .pic-bagel {
-    width: 25%;
+    width: 35%;
   }
   .pic-humane {
-    width: 25%;
+    width: 35%;
   }
   .pic-arboretum {
     width: 25%;
@@ -424,9 +475,9 @@ before this i was having problems with the anchor adding padding and a negative 
     font-size: 2.1rem;
   }
   .sub-section-title {
-    font-size: 1.6rem;
-    margin-left: 5%;
-    margin-right: 5%;
+    font-size: 1.5rem;
+    margin-left: 3%;
+    margin-right: 3%;
   }
   .exp {
     font-size: 1.9rem;
@@ -450,12 +501,51 @@ before this i was having problems with the anchor adding padding and a negative 
     margin-left: -100px;
   }
 }
+
 @media screen and (min-width: 600px) and (max-width: 900px) {
   .grid-container {
     grid-template-columns: repeat(auto-fit, 45%);
   }
-  .comp-item {
-    padding-left: 35%;
+}
+@media screen and (min-width: 800px) and (max-width: 1100px) {
+  .title {
+    font-size: 1rem;
+  }
+  .nav-box {
+    width: 70px;
+    font-size: 0.8rem;
+  }
+  .nav__link {
+    position: fixed;
+    width: 100%;
+    top: 3.46rem;
+  }
+  .nav-box {
+    width: 100%;
+    display: block;
+    text-align: center;
+    padding: 4px 0;
+  }
+  .nav-box:hover {
+    background-color: #0000cc;
+    color: lightsteelblue;
+  }
+  .hamburger {
+    display: block;
+  }
+  .hide {
+    display: none;
+  }
+  .hamburger {
+    padding-right: 10px;
+  }
+
+  .hamburger .line {
+    display: block;
+    width: 30px;
+    height: 3px;
+    margin-bottom: 5px;
+    margin-right: 5px;
   }
 }
 @media print {

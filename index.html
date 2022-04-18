@@ -7,26 +7,18 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta property="og:url" content="https://jerserver5712.ddns.net/personal-site">
+    <meta property="og:url" content="https://jeremy-scheuerman-portfolio.helix5712.com/">
     <meta property="og:type" content="Portfolio">
     <meta property="og:title" content="Jeremy Scheuerman's Digital Portfolio">
-    <meta property="og:image" content="https://jerserver5712.ddns.net/personal-site/images/portfolio_banner.png">
+    <meta property="og:image" content="https://jeremy-scheuerman-portfolio.helix5712.com/images/portfolio_banner.png">
     <meta name="google-site-verification" content="h_Rs_65Ej4hme9zrpmAmr8CaOQ4oAoS6uLJYvFbvbmo" />
     <!-- google verification -->
     <meta name="author" content="Jeremy Scheuerman">
     <!-- meta tags which include preview of website and thumbnail -->
     <meta property="og:description"
         content="My personal website going into detail about my work, skillset, and knowledge in the tech field.">
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- without this jquery navbar togglign was not working properly do not remove -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous" />
-    <!--use this above link to include bootstrap in your project -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ"
-        crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <!-- this link above includes bootstrap icons in your project -->
     <link rel="stylesheet" href="styles.css" />
     <link href="fontawesome-free-6.1.1-web/css/all.css" rel="stylesheet">
@@ -42,44 +34,33 @@
 <title>Jeremy Scheuerman's Digital Portfolio</title>
 
 <body class="content">
-    <div id="about"></div>
     <!-- take back to top of the page -->
-    <nav class="autohide navbar-main navbar navbar-expand-lg navbar-dark fixed-top">
-        <div class="container-fluid">
-            <!-- container class used to create a margin -->
-            <div class="navbar-brand main-title ">Jeremy Scheuerman's Digital Portfolio</div>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu"
-                aria-controls="nav-menu" aria-expanded="false" aria-label="Toggle navigation">
-                <!-- targets the nav menu so making it that that is what collapses in the hamburger menu -->
-                <!-- aria controls are for accesibility controls  -->
-                <span class="navbar-toggler-icon">
-                    <!-- adds hamburger symbol -->
-                </span>
-            </button>
-            <!-- makes it so that it will collapse on smaller screens like a phone or half window -->
-            <div class="collapse navbar-collapse py-3" id="navmenu">
-                <ul class="navbar-nav nav-fill ms-auto">
-                    <!-- ms-auto makes it scale -->
-                    <li class="nav-item button custom-button">
-                        <a class="nav-link button-text text-center" href=" #about">About me</a>
-                    </li>
-                    <li class="nav-item button custom-button">
-                        <a class="nav-link button-text text-center" href="#experience">Experience</a>
-                    </li>
-                    <li class="nav-item button custom-button">
-                        <a class="nav-link button-text text-center" href="#projects">Projects</a>
-                    </li>
-                    <li class="nav-item button custom-button">
-                        <a class="nav-link button-text text-center" href="#skills">Skills</a>
-                    </li>
-                    <li class="nav-item button custom-button">
-                        <a class="nav-link button-text text-center" href="#links">Links / Contact Me</a>
-                    </li>
-                </ul>
+    <div class="nav-container">
+        <nav class="nav">
+            <p class="title">Jeremy Scheuerman's Portfolio</p>
+            <div class="hamburger">
+                <span class="line"></span><span class="line"></span>
+                <span class="line"></span>
             </div>
-        </div>
-    </nav>
-    <h1 class="section-title about">About Me
+            <div class="nav__link hide">
+                <a class="nav-box mobile nav-item" href="#about">
+                    <p class="box-text">About</p>
+                </a><a class="nav-box mobile nav-item" href="#experience">
+                    <p class="box-text">Experience</p>
+                </a>
+                <a class="nav-box mobile nav-item" href="#projects">
+                    <p class="box-text">Projects</p>
+                </a>
+                <a class="nav-box mobile nav-item" href="#skills">
+                    <p class="box-text">Skills</p>
+                </a>
+                <a class="nav-box mobile nav-item" href="#links">
+                    <p class="box-text">Links / Contact</p>
+                </a>
+            </div>
+        </nav>
+    </div>
+    <h1 id="about" class="section-title about">About Me
     </h1>
     <div class="align-image">
         <img src="images\me.jpg" class="picture pic-me rounded" alt="Me">
@@ -224,7 +205,6 @@
                     <li class="comp-item">PLC Logic Controllers</li>
                     <li class="comp-item">Use of Jira Project tracking software</li>
                 </ul>
-                <div class="space"></div>
             </div>
             <h2 class="sub-section-title">A Technical Support Analyst at Johns Hopkins</h2>
             <div class="align-image">
@@ -274,7 +254,6 @@
             </ul>
             <a id="projects"><a>
                     <h1 class="section-title">Personal Projects</h1>
-                    <div class="space"></div>
                     <h2 class="sub-section-title">Solo Game Development</h2>
                     <div class="body-text">
                         <img src="images\GMS2_Primary_DblLine_BlackTransparent.png" class="picture pic-GM align-image"
@@ -469,22 +448,10 @@
                             and
                             make a
                             Portfolio website, I used HTML5, CSS3, Javascript and a bit of Bootsrap to develop this
-                            site.
+                            site. ( since then all bootstrap has been removed and replaced with pure javascript)
                             I
-                            went
-                            out of my
-                            way to optimize the site to be responsive on PCs as well as on mobile screens by using media
-                            queries along with CSS Flexbox and Grid.
-                            Additionally, I had
-                            been familiar with GitHub and have always uploaded my projects to my page when I was
-                            finished, but I
-                            had
-                            never
-                            integrated it into my workflow. Since this is the industry standard, I decided it was time
-                            to learn
-                            it,
-                            while making
-                            this website project, I decided to integrate git version control into my workflow. This made
+                            used flexbox and grid to ensure responsive design across all devices
+                            Additionally, I decided to integrate git version control into my workflow, which made
                             it
                             easier
                             for
@@ -556,15 +523,7 @@
                             social medias into
                             the site so users could see the updated feed . Additionally, I wrote as bagel timer feature
                             in
-                            JavaScript which alerts when the fresh bagels will be ready. This was some great practice as
-                            i have been working with Javascript in both of
-                            my web
-                            devlopment classes and also working with it in some personal projects to become more
-                            proficient in
-                            it.I was able
-                            to implement that into the site as well as cleaning up some other visual aspects of the site
-                            as
-                            well.
+                            JavaScript which alerts when the fresh bagels will be ready.
                         </p>
                         <h1 class="comp-title">
                             Competencies Used
@@ -584,23 +543,17 @@
                     <div class="body-text">
                         <p>During the first semester of my senior year, I participated in Salisbury’s WXSU radio club to
                             host a podcast. This
-                            semester as a personal project, and because I am friends with a few of the student managers,
+                            semester, as a personal project,
                             I offered to rebuild their
                             entire website from the ground up as it was old and desperately needed to be updated. The
                             old site which you can view
-                            <a href="https://orgs.salisbury.edu/wxsu/">here</a> (for now) was quite rough. The colors
-                            didn’t mesh, it looked very dated
-                            and some links
-                            to main pages didn’t even
-                            work. Additionally, the site was completely broken on mobile to the point where it was
-                            almost unusable. This site also
+                            <a href="https://orgs.salisbury.edu/wxsu/">here</a> (for now) was quite rough. The visual
+                            design was outdated and many of the links didn't work properly. This site also
                             lacked organization as well as the ability to listen to the radio station live straight from
                             in site. I rebuilt the
                             entire website from a blank slate from the ground up. I used CSS flexbox as well as media
                             queries to ensure responsive
-                            design, as I feel this is one of the most important things to have, especially for a site
-                            used by college students who
-                            are always on mobile. I built a responsive nav bar with some JavaScript and a dedicated page
+                            design. I built a responsive nav bar with some JavaScript and a dedicated page
                             for forms to apply to host
                             a show. The coolest feature I added was the ability to listen to the show straight from the
                             websites home page. I
@@ -625,11 +578,10 @@
                         </ul>
                     </div>
                     <a id="skills"></a>
-                    <div class="space"></div>
                     <h1 class="section-title">
                         Skills
                     </h1>
-                    <ul class=" grid-container skill-list">
+                    <ul class=" grid-container skill-list skill-container">
                         <li class="grid-item"><i class="fab fa-html5"></i> Html5
                         </li>
                         <li class="grid-item"><i class="fab fa-css3-alt"></i> CSS
@@ -655,7 +607,7 @@
                         <li class="grid-item"><i class="fas fa-gamepad"></i> GameMaker Studio 2
                         </li>
                     </ul>
-                    <div class="space"></div>
+
                     <h2 class="sub-section-title">Moving Forward</h2>
                     <div class="body-text">
                         <p>In the next upcoming years, I am excited to continue this journey in the tech field and learn
