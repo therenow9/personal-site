@@ -280,16 +280,16 @@
   text-align: center;
 }
 #skills {
-  padding-top: 55px;
-  margin-top: -55px;
+  padding-top: 40px;
+  margin-top: -40px;
 }
 #experience {
-  padding-top: 60px;
-  margin-top: -60px;
+  padding-top: 45px;
+  margin-top: -45px;
 }
 #projects {
-  padding-top: 60px;
-  margin-top: -60px;
+  padding-top: 50px;
+  margin-top: -50px;
 }
 #about {
   padding-top: 70px;
@@ -345,10 +345,6 @@ before this i was having problems with the anchor adding padding and a negative 
   }
 }
 
-@media screen and (min-width: 320px) and (max-width: 500px) {
-  .comp-item {
-  }
-}
 @media screen and (min-width: 320px) and (max-width: 800px) {
   /* navbar styles */
   /* MEdia queries to adjust all of these relative to phone screens */
