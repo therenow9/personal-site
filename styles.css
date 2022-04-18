@@ -103,7 +103,7 @@
 }
 
 .sub-section-title {
-  font-weight: lighter;
+  font-weight: 600;
   font-size: 1.9rem;
   font-family: Verdana, sans-serif;
   margin-left: 5%;
@@ -383,21 +383,17 @@ before this i was having problems with the anchor adding padding and a negative 
     color: lightsteelblue;
   }
   .hamburger {
-    display: block;
+    display: initial;
   }
   .hide {
     display: none;
-  }
-  .hamburger {
-    padding-right: 10px;
   }
 
   .hamburger .line {
     display: block;
     width: 30px;
-    height: 3px;
+    height: 2.5px;
     margin-bottom: 5px;
-    margin-right: 5px;
   }
   .caption-text {
     padding-top: 2%;
@@ -544,7 +540,7 @@ before this i was having problems with the anchor adding padding and a negative 
   .hamburger .line {
     display: block;
     width: 30px;
-    height: 3px;
+    height: 2.5px;
     margin-bottom: 5px;
     margin-right: 5px;
   }
