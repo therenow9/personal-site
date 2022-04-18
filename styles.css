@@ -354,7 +354,7 @@ before this i was having problems with the anchor adding padding and a negative 
   /* MEdia queries to adjust all of these relative to phone screens */
   /* mobile media queries */
   .nav-container {
-    margin-top: -23px;
+    margin-top: -28px;
   }
   .title {
     font-size: 1rem;
@@ -366,7 +366,7 @@ before this i was having problems with the anchor adding padding and a negative 
   .nav__link {
     position: fixed;
     width: 100%;
-    top: 3.46rem;
+    top: 3.15rem;
   }
   .nav-box {
     width: 100%;
