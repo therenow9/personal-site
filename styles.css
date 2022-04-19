@@ -298,7 +298,6 @@
 #links {
   padding-top: 30px;
   margin-top: -30px;
-  padding-bottom: 0px;
 }
 #mail {
   padding-bottom: 30px;
@@ -482,6 +481,28 @@ before this i was having problems with the anchor adding padding and a negative 
   }
   .skill-list {
     font-size: 1.4rem;
+  }
+  #skills {
+    padding-top: 70px;
+    margin-top: -70px;
+  }
+  #experience {
+    padding-top: 65px;
+    margin-top: -65px;
+  }
+  #projects {
+    padding-top: 60px;
+    margin-top: -60px;
+  }
+  #about {
+    padding-top: 70px;
+  }
+  #links {
+    padding-top: 80px;
+    margin-top: -80px;
+  }
+  #mail {
+    padding-bottom: 30px;
   }
   #mail {
     padding-bottom: 20px;
