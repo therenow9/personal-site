@@ -189,7 +189,7 @@
   margin-right: auto;
   padding: 0%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, 33%);
+  grid-template-columns: repeat(auto-fit, 30%);
   grid-template-rows: repeat(auto, 90%);
   grid-gap: 0.5rem;
   justify-content: center;
