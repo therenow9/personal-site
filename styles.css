@@ -18,6 +18,7 @@ h2 {
   margin-right: 5%;
 }
 p {
+  display: initial;
 }
 /* UTILITIES */
 .flex-container {
