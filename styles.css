@@ -65,7 +65,7 @@ p {
   justify-content: space-between;
   align-items: center;
   background-color: navy;
-  height: 55px;
+  height: 50px;
   position: fixed;
   width: 100%;
   z-index: 2;
@@ -102,7 +102,7 @@ p {
 .nav-box {
   width: 112px;
   display: inline-block;
-  padding: 7px 15px;
+  padding: 17px 10px;
   height: default;
   text-decoration: none;
   color: white;
