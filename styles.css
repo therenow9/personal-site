@@ -56,7 +56,7 @@
 }
 .hamburger:hover .line {
   /* background-color */
-  background-color: lightsteelblue;
+  opacity: 0.5;
 }
 .hide {
   display: none;
@@ -189,7 +189,7 @@
   margin-right: auto;
   padding: 0%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, 33%);
+  grid-template-columns: repeat(auto-fit, 30%);
   grid-template-rows: repeat(auto, 90%);
   grid-gap: 0.5rem;
   justify-content: center;
@@ -281,16 +281,16 @@
   text-align: center;
 }
 #skills {
-  padding-top: 40px;
-  margin-top: -40px;
+  padding-top: 55px;
+  margin-top: -55px;
 }
 #experience {
-  padding-top: 45px;
-  margin-top: -45px;
+  padding-top: 55px;
+  margin-top: -55px;
 }
 #projects {
-  padding-top: 50px;
-  margin-top: -50px;
+  padding-top: 55px;
+  margin-top: -55px;
 }
 #about {
   padding-top: 70px;
@@ -298,7 +298,6 @@
 #links {
   padding-top: 30px;
   margin-top: -30px;
-  padding-bottom: 0px;
 }
 #mail {
   padding-bottom: 30px;
@@ -482,6 +481,28 @@ before this i was having problems with the anchor adding padding and a negative 
   }
   .skill-list {
     font-size: 1.4rem;
+  }
+  #skills {
+    padding-top: 70px;
+    margin-top: -70px;
+  }
+  #experience {
+    padding-top: 65px;
+    margin-top: -65px;
+  }
+  #projects {
+    padding-top: 60px;
+    margin-top: -60px;
+  }
+  #about {
+    padding-top: 70px;
+  }
+  #links {
+    padding-top: 80px;
+    margin-top: -80px;
+  }
+  #mail {
+    padding-bottom: 30px;
   }
   #mail {
     padding-bottom: 20px;
