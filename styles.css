@@ -1,14 +1,55 @@
-.content {
+/* GENERAL STYLES */
+body {
   margin-left: auto;
   margin-right: auto;
   background-color: rgb(203, 215, 246);
-  /* adding padding to top to put about title below navbar */
+  text-align: center;
 }
-/* navbar styles */
-/* nav styles */
+h1 {
+  font-size: 2.6rem;
+  font-family: Verdana, sans-serif;
+  font-weight: bold;
+}
+h2 {
+  font-weight: 600;
+  font-size: 1.9rem;
+  font-family: Verdana, sans-serif;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+p {
+}
+/* UTILITIES */
+.flex-container {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+.grid-container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 30%);
+  grid-template-rows: repeat(auto, 90%);
+  grid-gap: 0.5rem;
+  justify-content: center;
+}
+.grid-item {
+  justify-content: space-evenly;
+}
+.space {
+  /* some small padding */
+  padding-top: 2.5%;
+}
+/* NAVIGATION */
 .title {
   font-family: Arial, Helvetica, sans-serif;
-  text-align: center;
   font-weight: bold;
   font-size: 1.4rem;
   color: white;
@@ -28,23 +69,10 @@
   width: 100%;
   z-index: 2;
 }
-
-.logo {
-  font-size: 1.8rem;
-  padding-left: 20px;
-}
-.my-logo {
-  padding-top: 0px;
-  height: 45px;
-  width: auto;
-}
-.logo-image {
-  width: 60%;
-  height: auto;
-}
 .hamburger {
   padding-right: 20px;
   cursor: pointer;
+  display: none;
 }
 
 .hamburger .line {
@@ -61,7 +89,6 @@
 .hide {
   display: none;
 }
-/* desktop first rules */
 .nav__link {
   display: block;
   position: static;
@@ -71,14 +98,12 @@
   font-size: 0.8rem;
   font-family: Arial, Helvetica, sans-serif;
 }
-
 .nav-box {
   width: 112px;
   display: inline-block;
   padding: 7px 15px;
   height: default;
   text-decoration: none;
-  text-align: center;
   color: white;
   font-weight: bold;
   text-transform: uppercase;
@@ -87,29 +112,8 @@
   background-color: #0000cc;
   color: lightsteelblue;
 }
-.hamburger {
-  display: none;
-}
-.space {
-  /* some small padding */
-  padding-top: 2.5%;
-}
-/* format some buttons for navbar */
-.section-title {
-  font-size: 2.6rem;
-  font-family: Verdana, sans-serif;
-  text-align: center;
-  font-weight: bold;
-}
 
-.sub-section-title {
-  font-weight: 600;
-  font-size: 1.9rem;
-  font-family: Verdana, sans-serif;
-  margin-left: 5%;
-  margin-right: 5%;
-  text-align: center;
-}
+/* CUSTOM STYLES */
 .exp {
   font-size: 2.5rem;
   padding-bottom: 1.5%;
@@ -120,14 +124,12 @@
   margin-left: 5%;
   margin-right: 5%;
   padding-top: 1%;
-  text-align: center;
   color: black;
 }
 .caption-text {
   padding-top: 0%;
   font-size: 1.4rem;
   font-family: Hand;
-  text-align: center;
   margin-left: 5%;
   margin-right: 5%;
 }
@@ -137,10 +139,8 @@
   list-style-type: none;
   padding-top: 1%;
   padding-bottom: 1%;
-  text-align: center;
 }
 .comp-title {
-  text-align: center;
   font-size: 1.6rem;
   font-style: italic;
   font-weight: bolder;
@@ -173,31 +173,6 @@
 }
 /* formatting text sizes fonts and colors */
 
-/* pictures and flexbox */
-.flex-container {
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  margin-left: 2%;
-  margin-right: 2%;
-}
-.grid-container {
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0%;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, 30%);
-  grid-template-rows: repeat(auto, 90%);
-  grid-gap: 0.5rem;
-  justify-content: center;
-}
-.grid-item {
-  justify-content: space-evenly;
-  text-align: center;
-}
 .picture {
   /* set width to a percentage */
   height: auto;
@@ -209,10 +184,7 @@
   border-radius: 10px;
   /* rounds corners */
 }
-.align-image {
-  /* nest around image tag to align single image */
-  text-align: center;
-}
+/* PICTURES FORMATTING */
 .pic-me {
   width: 15%;
   padding-top: 20px;
@@ -272,14 +244,6 @@
 .link:hover {
   color: blue;
 }
-/* remove border when dropped down adds different background color instead */
-.note {
-  font-style: italic;
-  font-weight: bold;
-}
-.table-flex {
-  text-align: center;
-}
 #skills {
   padding-top: 55px;
   margin-top: -55px;
@@ -306,7 +270,7 @@
 will take you to the correct spot on the page
 before this i was having problems with the anchor adding padding and a negative margin seems to be a good work around for this */
 
-/* animate sprite */
+/* ANIMATION*/
 #earl-sprite-container {
   padding-top: 15px;
   display: block;
@@ -344,7 +308,7 @@ before this i was having problems with the anchor adding padding and a negative 
     margin-left: 105%;
   }
 }
-
+/* RESPONSIVE DESIGN */
 @media screen and (min-width: 320px) and (max-width: 800px) {
   /* navbar styles */
   /* MEdia queries to adjust all of these relative to phone screens */
@@ -367,7 +331,6 @@ before this i was having problems with the anchor adding padding and a negative 
   .nav-box {
     width: 100%;
     display: block;
-    text-align: center;
     padding: 4px 0;
   }
   .nav-box:hover {
@@ -482,6 +445,7 @@ before this i was having problems with the anchor adding padding and a negative 
   .skill-list {
     font-size: 1.4rem;
   }
+  /* A TAG LINKS */
   #skills {
     padding-top: 70px;
     margin-top: -70px;
@@ -516,9 +480,6 @@ before this i was having problems with the anchor adding padding and a negative 
 }
 
 @media screen and (min-width: 600px) and (max-width: 900px) {
-  .grid-container {
-    grid-template-columns: repeat(auto-fit, 30%);
-  }
 }
 @media screen and (min-width: 800px) and (max-width: 1100px) {
   .title {
@@ -527,32 +488,26 @@ before this i was having problems with the anchor adding padding and a negative 
   .comp-item {
     padding-left: 25%;
   }
-  .nav-box {
-    width: 70px;
-    font-size: 0.8rem;
-  }
   .nav__link {
     position: fixed;
     width: 100%;
     top: 3.46rem;
   }
   .nav-box {
+    font-size: 0.8rem;
     width: 100%;
     display: block;
-    text-align: center;
     padding: 4px 0;
   }
   .nav-box:hover {
     background-color: #0000cc;
     color: lightsteelblue;
   }
-  .hamburger {
-    display: block;
-  }
   .hide {
     display: none;
   }
   .hamburger {
+    display: block;
     padding-right: 10px;
   }
 
@@ -567,6 +522,7 @@ before this i was having problems with the anchor adding padding and a negative 
     grid-template-columns: repeat(auto-fit, 49%);
   }
 }
+/* PRINTER MODE */
 @media print {
   .content {
     background-color: rgb(255, 255, 255);
