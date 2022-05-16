@@ -335,7 +335,7 @@ before this i was having problems with the anchor adding padding and a negative 
   }
   /* navbar styles */
   .nav-container {
-    margin-top: -22.5px;
+    margin-top: -23px;
   }
   .title {
     font-size: 1rem;
@@ -405,7 +405,7 @@ before this i was having problems with the anchor adding padding and a negative 
     padding-top: 5%;
   }
   .pic-desktop {
-    width: 100%;
+    width: 80%;
   }
   .pic-pendant {
     width: 90%;
