@@ -335,7 +335,8 @@ before this i was having problems with the anchor adding padding and a negative 
   }
   /* navbar styles */
   .nav-container {
-    margin-top: -26px;
+    margin-top: -28px;
+    /* Must stay at -28 to prevent a small space on mobile, look into fixing this */
   }
   .title {
     font-size: 1rem;
