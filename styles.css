@@ -225,7 +225,7 @@ p {
   width: 20%;
 }
 .pic-server {
-  width: 15%;
+  width: 10%;
 }
 .pic-web-code {
   width: 25%;
@@ -245,6 +245,12 @@ p {
 .pic-WXSU {
   width: 80%;
 }
+.pic-saic {
+  width: 20%;
+}
+.pic-ceh {
+  width: 20%;
+}
 /* resize some pictures to scale */
 .link {
   padding-bottom: 6%;
@@ -252,7 +258,7 @@ p {
 .link:hover {
   color: blue;
 }
-#skills {
+#education {
   padding-top: 55px;
   margin-top: -55px;
 }
@@ -329,7 +335,7 @@ before this i was having problems with the anchor adding padding and a negative 
     margin-right: 3%;
   }
   p {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     margin-left: 7%;
     margin-right: 7%;
   }
@@ -448,11 +454,17 @@ before this i was having problems with the anchor adding padding and a negative 
   .pic-WXSU {
     width: 90%;
   }
+  .pic-saic {
+    width: 70%;
+  }
+  .pic-ceh {
+    width: 65%;
+  }
   .skill-list {
     font-size: 1.4rem;
   }
   /* A TAG LINKS */
-  #skills {
+  #education {
     padding-top: 70px;
     margin-top: -70px;
   }
